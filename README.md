@@ -2,7 +2,7 @@
 
 1) You must conitn a folder with sam_R1.fastq, sam_R2.fastq and mapping.txt files solely.
 2) Change the "input_path" variable insie main.py to the location of the work folder
-3) excute main.py
+3) Excute main.py
 
 
 This will separeta reads from sam_R1.fastq and sam_R2.fastq in diferents files by barcode.
