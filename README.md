@@ -9,6 +9,6 @@ It must has the columns name "SampleID" and "BarcodeSequence". You can incluide 
 
 **Result:**
 + Separate reads from sam_R1.fastq and sam_R2.fastq in diferents files by barcode. Only exact matches are taken into account. The finall output will be in the FullDemux folder.
-+ Create reads_counts.txt file contaning the read counts of file demultiplexed by barcode.
++ Create reads_counts.txt file in the work folder contaning the reads counts of every file demultiplexed by barcode.
 
 
