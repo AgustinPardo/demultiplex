@@ -8,5 +8,5 @@
 This will separeta reads from sam_R1.fastq and sam_R2.fastq in diferents files by barcode.
 The finall output will be in the FullDemux forlder.
 
-The barcodes must be provides in a tab separated file call "mapping.txt", like this [mapping_file_example.txt].(https://github.com/AgustinPardo/demultiplex/tree/master/example)
+The barcodes must be provides in a tab separated file call "mapping.txt", like this [mapping_file_example.txt](https://github.com/AgustinPardo/demultiplex/tree/master/example).
 It must has the example columns name "SampleID" and "BarcodeSequence". You can incluide another columns.
