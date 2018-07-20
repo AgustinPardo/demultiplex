@@ -10,22 +10,12 @@ The finall output will be in the FullDemux forlder.
 
 The barcodes must be provides in a tabs separated file call "mapping.txt", like this:
 
-SampleID	BarcodeSequence
-planta.1a	CGTAACCA
-planta.1d	CGTAAGAA
-planta.4b	CGTACCCA
-planta.4d	CGTAGATA
-yucra.1a	CGTAGGCT
-yucra.1b	CGTATTCA
-yucra.4a	CGTATTTC
-yucra.4b	CGTCAAGA
-yucra.7a	CGTCACAG
-yucra.7b	CGTCCAGG
-ref.3	CGTCGCAT
-ref.4	CGTCTGAA
-sev1	CGTGAGAC
-sev2	CGTGATAA
-prep1	CGTGGGAC
-prep2	CGTGGTCA
+|SampleID|BarcodeSequence|
+|-------------|-------------|
+|planta.1a|CGTAACCA|
+|planta.1d|CGTAAGAA|
+|ref.3|CGTCGCAT|
+|sev1|CGTGAGAC|
+|prep1|CGTGGGAC|
 
 It must has the example columns name "SampleID" and "BarcodeSequence". You can incluide another columns.
