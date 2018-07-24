@@ -1,8 +1,7 @@
 # demultiplex
 
 1) You must contain  sam_R1.fastq, sam_R2.fastq and mapping.txt files solely in a work folder.
-2) Change the "input_path" variable inside main.py to the location of the work folder
-3) Excute main.py
+2) Excute main.py with the path of the work folder as fisrt argument (i.e.: python main.py path)
 
 The barcodes must be provides in a tab separated file call "mapping.txt", like this [mapping_file_example.txt](https://github.com/AgustinPardo/demultiplex/tree/master/example).
 It must has the columns name "SampleID" and "BarcodeSequence". You can incluide another columns.
