@@ -39,8 +39,8 @@ def fullDemux(partialDemux_path,sam_R1_dic,sam_R2_dic,out_path):
 		fastq_name=fastq.split("/")[-1]
 		fastq_name=fastq_name[:-24]			
 		
-		fullcapture_R1_file=open(out_path+fastq_name+"_R1_"+"FullCapture"+".fastq","a")
-		fullcapture_R2_file=open(out_path+fastq_name+"_R2_"+"FullCapture"+".fastq","a")
+		fullcapture_R1_file=open(out_path+fastq_name+"_R1"+".fastq","a")
+		fullcapture_R2_file=open(out_path+fastq_name+"_R2"+".fastq","a")
 		
 		line_index=2	
 		while line_index < fastq_number_of_lines:

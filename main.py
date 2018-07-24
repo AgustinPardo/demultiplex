@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 
+import sys
 from mapping_file_parse import *
 from partial_capture import *
 from full_capture import *
 from checks import readsCount
 
 # input path
-input_path="/home/agustin/laura_Raiger_amplicones/Otoño 2016/"
+input_path=sys.argv[1]
 
 # Leo los archivos sam
 sam_files=(glob.glob(input_path+"*.fastq"))
