@@ -33,6 +33,7 @@ def fullDemux(partialDemux_path,sam_R1_dic,sam_R2_dic,out_path):
 	
 		fastq_file=open(fastq,"r")
 		fastq_lines=fastq_file.readlines()
+		fastq_file.close()
 		fastq_number_of_lines=len(fastq_lines)
 
 		
@@ -49,16 +50,16 @@ def fullDemux(partialDemux_path,sam_R1_dic,sam_R2_dic,out_path):
 			capture_R1=sam_R1_dic[int(read_index)]
 						
 			fullcapture_R1_file.write(capture_R1[0])
-			fullcapture_R1_file.write(capture_R1[1])
+			fullcapture_R1_file.write(capture_R1[1][28:])
 			fullcapture_R1_file.write(capture_R1[2])
-			fullcapture_R1_file.write(capture_R1[3])
+			fullcapture_R1_file.write(capture_R1[3][28:])
 			
 			capture_R2=sam_R2_dic[int(read_index)]
 			
 			fullcapture_R2_file.write(capture_R2[0])
-			fullcapture_R2_file.write(capture_R2[1])
+			fullcapture_R2_file.write(capture_R2[1][28:])
 			fullcapture_R2_file.write(capture_R2[2])
-			fullcapture_R2_file.write(capture_R2[3])
+			fullcapture_R2_file.write(capture_R2[3][28:])
 		
 			line_index=line_index+3		
 		
