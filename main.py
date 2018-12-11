@@ -37,5 +37,5 @@ sam_R2_dic=samDict(sam_files_dic["sam_R2_file"])
 fullDemux(input_path+"PartialDemux/",sam_R1_dic,sam_R2_dic,input_path+"FullDemux/")
 
 # Chequeo de sequencias
-readsCount(input_path+"FullDemux/",input_path)
+readsCount(input_path)
 
