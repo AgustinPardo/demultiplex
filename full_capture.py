@@ -5,7 +5,13 @@ import glob
 from file_manage import *
 
 def samDict(sam_file):
-	sam_file=open(sam_file,"r")
+
+	if "R1" in sam_file[0]:
+		open_file=sam_file[0]
+	else:	
+		open_file=sam_file[1]
+
+	sam_file=open(open_file,"r")
 	sam_lines=sam_file.readlines()
 	sam_lines_number=len(sam_lines)
 	line_index=0

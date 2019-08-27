@@ -32,8 +32,8 @@ def readsCount(input_path):
 	sam_sum=0
 	
 	for sam in sam_files:
-			
-		sam_name=fastq.split("/")[-1][:-6]
+		
+		sam_name=sam
 		reads_count=readsNumber(sam)
 		salida.write(sam_name+"\t"+reads_count+"\n")
 		sam_sum = sam_sum + int(reads_count)

@@ -16,10 +16,6 @@ def partialDemux(mapping,sam_files,out_path):
 			line_splited=line.split("\t")
 			barcodes_dic[line_splited[0]+"_"+line_splited[2]]=[line_splited[1],line_splited[2],line_splited[3]]
 	
-	
-	#~ dataset=pd.read_csv(mapping,delimiter="\t") 	
-	#~ barcodes_dic=dict(zip(dataset.SampleID,dataset.BarcodeSequence)) 	
-		
 	fastq_files=sam_files
 	
 	for fastq in fastq_files:	
